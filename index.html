@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">  
+    <title>JavaScript</title>
+</head>
+<body>   
+    <div class="startPage">
+        <div class="mainStartingBlock" >
+                <div class="leftStartsBlock">
+                    <h1>Руководство по </h1>
+                    <br>
+                    
+                    <h1>JavaScript</h1>
+                    <p class="descripLeftStartsBlock">Погружение в IT-профессию подразумевает постоянный 
+                        контакт с изучаемыми технологиями. Цель этого сайта 
+                        - предоставить как можно более грамотную и 
+                        структурированную информацию о языке JS.
+                        Здесь вы узнаете общие сведения о языке,
+                        зачем он нужен, для чего его можно использовать,
+                        в каких случаях этот язык не подойдет.
+                    </p>
+                    <p class="indication">Для продолжения введите:</p>
+                    <div class="blockInputDataStartPage">
+                        <form id="formStartPage" class="formInputDataStartPage" action="#" method="GET" >
+                            <fieldset class="caseFormStartPage" form="name" name="userName">
+                                <input id="inputNameFormStartPage" class="fieldInput" type="text" name="name" autocomplete="on" autofocus form="formStartPage" placeholder="Имя" required>
+                                <input id="inputSurnameFormStartPage" class="fieldInput" type="text" name="surname" form="formStartPage" placeholder="Фамилия" required > 
+                                <p class="indication"><input id="rgt" onclick="" name="consent" form="formStartPage" type="checkbox" value="" > Согласие на обработку персональных данных</p>
+                            </fieldset>  
+                        </form>
+                        <input id="buttonFormInputDataStartPage" type="button" class="button" data-modal="idPopupBlockStartPage" form="formStartPage" value="продолжить" disabled>
+                    </div>
+                </div>
+                <div class="rightStartsBlock">
+                    <div class="blockImgStartPage"><img src="img/jsIcon.png" alt="" width="85%"></div>
+                </div>
+                <div class="overlay" data-close="idPopupBlockStartPage"></div>
+                <div id="idPopupBlockStartPage" class="popupBlockStartPage">
+                        <h3>Добро пожаловать </h3>
+                        <h4 id="popupBlockHiStartPage"></h4>
+                        <button id="popupBlockButtonStartPage" type="button" class="button" style="margin-top: 70px">продолжить</button>
+                </div>    
+        </div>   
+    </div>
+    <div class="hideFirstBlock">
+        <header>
+            <div class="allHeader">
+                <div class="staticHeader">
+                    <div class="headerBlockUser headerBlockUserFirst"><img src="img/jsIcon.png" alt=""></div>
+                    <div class="headerBlockUser headerBlockUserSecond">Пользователь:<span id="blockUserName"></span></div>
+                </div>
+                <div class="posters posterFirst"></div>
+                <div class="blockTitleArticle blockTitleArticleFirst">
+                    <div class="displacementBlock">
+                        <h1 class="phraseOneTitleArticle phraseOneTitleArticleFirst">Что такое JavaScript?</h1>
+                        <h2 class="phraseTwoTitleArticle phraseTwoTitleArticleFirst">Кажется, все вокруг только его и обсуждают... Что вообще происходит?</h2>
+                    </div>
+                </div>
+                <div class="blockText">   
+                        <p>Изначально JavaScript был создан, чтобы <span class="italicStyleText">«сделать веб-страницы живыми»</span>.</p>
+                        <p>Программы на этом языке называются скриптами. Они могут встраиваться в HTML и выполняться автоматически при загрузке веб-страницы. </p>
+                        <p>Скрипты распространяются и выполняются, как простой текст. Им не нужна специальная подготовка или компиляция для запуска. Это отличает JavaScript от другого языка – Java.</p>
+                        <p>Если ты сравниваешь какой-то язык, с процессами, которое происходят в жизни, то на шаг вперед туман начинает рассеиваться!<br>
+                        <p>Если HTML - это строительный материал, например кирпич. <br>
+                        Если CSS - это расположение, и свойства строительного материала и готовых зданий, цвет, размер.<br>
+                        Если PHP - это скрытые процессы, происходящие внутри здания, которые мы не видим, а видим лишь результат - ток в сети (результат: свет лампы), вода в трубе (результат: вода, текущая из крана)<br></p>
+                        <span class="boldStyleText" >И ТАК, ЧТО ТАКОЕ JAVASCRIPT СВОИМИ СЛОВАМИ :</span>
+                        <p>JavaScript можно сравнить с любым вашим действием на предмет, результат который вы сможете наблюдать прямо сейчас, без перезагрузки страницы. Например включение света. Когда вы нажимаете по выключателю, то лампа зажигается. Другими словами всё, что вы делаете в данный момент времени и видите результат ваших действий и есть JavaScript.</p>
+                        <div class="informativeBLockInBorder">
+                            <p><span class="boldStyleText">Почему <span class="italicStyleText">JavaScript?</span></span><br>
+                            Когда JavaScript создавался, у него было другое имя – «LiveScript». Однако, язык Java был очень популярен в то время, и было решено, что позиционирование JavaScript как «младшего брата» Java будет полезно.<br>
+                            Со временем JavaScript стал полностью независимым языком со своей собственной спецификацией, называющейся ECMAScript, и сейчас не имеет никакого отношения к Java.</p>
+                        </div>
+                </div>
+                <div class="posters posterSecond"></div>
+                <div class="blockTitleArticle blockTitleArticleSecond">
+                    <div class="displacementBlock">
+                        <h1 class="phraseOneTitleArticle phraseOneTitleArticleSecond">Что может JavaScript в браузере?</h1>
+                        <h2 class="phraseTwoTitleArticle phraseTwoTitleArticleSecond">Становимся многорукими волшебниками</h2>
+                    </div>
+                </div>
+                <div class="blockText"> 
+                    <p>Сегодня JavaScript может выполняться не только в браузере, но и на сервере или на любом другом устройстве, которое имеет специальную программу, называющуюся «движком» JavaScript. <br>
+                    У браузера есть собственный движок, который иногда называют «виртуальная машина JavaScript».</p>
+                    <p>Современный JavaScript – это «безопасный» язык программирования. Он не предоставляет низкоуровневый доступ к памяти или процессору, потому что изначально был создан для браузеров, не требующих этого. </p>
+                    <p>Возможности JavaScript сильно зависят от окружения, в котором он работает. Например, Node.JS поддерживает функции чтения/записи произвольных файлов, выполнения сетевых запросов и т.д.</p>
+                    <p> В браузере для JavaScript доступно всё, что связано с манипулированием веб-страницами, взаимодействием с пользователем и веб-сервером.<p>
+                    <span class="boldStyleText" >В браузере JavaScript может:</span>
+                    <ol class="rounded">
+                        <li><a>Добавлять новый HTML-код на страницу</a></li>
+                        <li><a>Изменять существующее содержимое</a></li>
+                        <li><a>Модифицировать стили</a></li>
+                        <li><a>Реагировать на действия пользователя</a></li>
+                        <li><a>Щелчки мыши</a></li>
+                        <li><a>Перемещения указателя</a></li>
+                        <li><a>Нажатия клавиш</a></li>
+                        <li><a>Отправлять сетевые запросы на удалённые сервера скачивать и загружать файлы (технологии AJAX и COMET)</a></li>
+                        <li><a>Задавать вопросы посетителю</a></li>
+                        <li><a>Показывать сообщения</a></li>
+                        <li><a>Запоминать данные на стороне клиента («local storage»)</a></li>
+                        <li><a>Получать и устанавливать куки</a></li>
+                    </ol>
+                </div>
+                <div class="posters posterThird"></div>
+                <div class="blockTitleArticle blockTitleArticleThird">
+                    <div class="displacementBlock">
+                        <h1 class="phraseOneTitleArticle phraseOneTitleArticleThird"> Чего НЕ может JavaScript в браузере?</h1>
+                        <h2 class="phraseTwoTitleArticle phraseTwoTitleArticleThird">Разбираемся с чем его <span class="boldStyleText" >НЕ</span> едят</h2>
+                    </div>
+                </div>
+                <div class="blockText">  
+                    <p>Разумеется, JavaScript  — языки программирования. Вы можете использовать его для создания приложений, но то же самое можно сказать о любых других языках. Важное различие с гигантами IT-сферы, такими как Java, C# заключается в том, что JavaScript не является языком программирования общего назначения, который компилируется, поддерживает параллельные процессы, строго типизирован, основан на классах и объектно-ориентирован. <br>
+                    JavaScript —  это, прежде всего, веб-язык, интерпретируемый, однопотоковый, слабо типизированный, основанный на прототипах и мультипарадигме.</p>
+                    <p>Возможности JavaScript в браузере ограничены ради безопасности пользователя. Цель заключается в предотвращении доступа недобросовестной веб-страницы к личной информации или нанесения ущерба данным пользователя. </p>
+                    <ol class="rounded">
+                        <li><a>
+                            <p>JavaScript на веб-странице не может читать/записывать произвольные файлы на жёстком диске, копировать их или запускать программы. Он не имеет прямого доступа к системным функциям ОС.</p>
+                            <p>Современные браузеры позволяют ему работать с файлами, но с ограниченным доступом, и предоставляют его, только если пользователь выполняет определённые действия, такие как «перетаскивание» файла в окно браузера или его выбор с помощью тега.</p> 
+                            <p>Существуют способы взаимодействия с камерой/микрофоном и другими устройствами, но они требуют явного разрешения пользователя. Таким образом, страница с поддержкой JavaScript не может незаметно включить веб-камеру, наблюдать за происходящим и отправлять информацию в ФСБ.</p>
+                        </a></li>
+                        <li><a>
+                            <p> Различные окна/вкладки не знают друг о друге. Иногда одно окно, используя JavaScript, открывает другое окно. Но даже в этом случае JavaScript с одной страницы не имеет доступа к другой, если они пришли с разных сайтов (с другого домена, протокола или порта).</p>
+                            <p>Это называется «Политика одинакового источника» (Same Origin Policy). Чтобы обойти это ограничение, обе страницы должны согласиться с этим и содержать JavaScript-код, который специальным образом обменивается данными.</p>
+                            <p>Это ограничение необходимо, опять же, для безопасности пользователя. Страница https://anysite.com, которую открыл пользователь, не должна иметь доступ к другой вкладке браузера с URL https://gmail.com и воровать информацию оттуда.</p> 
+                        </a></li>
+                        <li><a>
+                            <p> JavaScript может легко взаимодействовать с сервером, с которого пришла текущая страница. </p>
+                            <p>Но его способность получать данные с других сайтов/доменов ограничена. Хотя это возможно в принципе, для чего требуется явное согласие (выраженное в заголовках HTTP) с удалённой стороной. Опять же, это ограничение безопасности.</p>
+                        </a></li>
+                    </ol>
+                </div>
+                <div class="posters posterFourth"></div>
+                <div class="blockTitleArticle blockTitleArticleFourth">
+                    <div class="displacementBlock">
+                        <h1 class="phraseOneTitleArticle phraseOneTitleArticleFourth">Что делает JavaScript особенным?</h1>
+                        <h2 class="phraseTwoTitleArticle phraseTwoTitleArticleFourth">Откровенно, решительно и охотно</h2>
+                    </div>
+                </div>
+                <div class="blockText">
+                    <p>JavaScript имеет как минимум три ильные стороны: <br>
+                        <ol class="rounded">
+                            <li><a>Полная интеграция с HTML/CSS.</a></li>
+                            <li><a>Простые вещи делаются просто.</a></li>
+                            <li><a>Поддерживается всеми основными браузерами и включён по умолчанию.</a></li>
+                        </ol>
+                    <p>JavaScript – это единственная браузерная технология, сочетающая в себе все эти три вещи, которые в свою очередь делают её самый распространённый инструмент для создания интерфейсов в браузере.
+                    Хотя, конечно, JavaScript позволяет делать приложения не только в браузерах, но и на сервере, на мобильных устройствах и т.п.</p>
+                </div>
+            </div> 
+        </header>
+
+        <main>
+            <div class="posters posterFifth"></div>
+            <div class="blockTitleArticle blockTitleArticleFifth">
+                <div class="displacementBlock">
+                    <h1 class="phraseOneTitleArticle phraseOneTitleArticleFifth">Задачи</h1>
+                    <h2 class="phraseTwoTitleArticle phraseTwoTitleArticleFifth">
+                        Ниже предтавлены задачи, для решения который необходимы знания HTML, CSS, JS <br> <br>
+                        <p>Для просмотра описания наведите на номер задания</p> 
+                    </h2>
+                    
+                </div>
+            </div>
+            <div class="blockAllTask"> 
+                <div class="blockTask">
+                    <div class="blockQuestionTask">
+                        <p class="taskText">Найти прощадь треугольника</p>
+                    </div>
+                    <div class="blockFormNumberTask">     
+                        <div class="blockNumberTask" title = "Для нахождения площади треугольника необходимо иметь знанния о получении данных через 'document.getElementById', событии 'onclick', математических операиях и выводе информации из JS-документа по средствам innerHTML ">
+                            <p class="textNumberTask">1</p>
+                        </div>
+                        <div>
+                            <p class="dataInputText">Введите основание и высоту треугольника:</p>
+                            <form action="#" id="formFirstTask" >
+                                <div class="blockFirstFormInput">                               
+                                    <input id="firstFormFirstInputId" type="number" placeholder="Основание" required form="formFirstTask">
+                                    <input id="firstFormSecondInputId" type="number" placeholder="Высота" required form="formFirstTask">
+                                </div> 
+                                <div class="blockFirstFormOutput">
+                                    <input id="firstFormThirdInputId" class="button" type="button" form="formFirstTask" value="вычилить" >
+                                    <p>Площадь: 
+                                        <p id="firstFormFirstPId"></p>
+                                    </p>
+                                </div>  
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+                <div class="blockTask">
+                    <div class="blockQuestionTask">
+                        <p class="taskText">Определить равенство строк</p>
+                    </div>
+                    <div class="blockFormNumberTask">     
+                        <div class="blockNumberTask"  title = "Для определения равенства строк необходимо иметь знанния о получении данных через 'document.getElementById', событии 'onclick', выводе информации из JS-документа по средствам innerHTML и нахождении длины строки через метод 'length' ">
+                            <p class="textNumberTask">2</p>
+                        </div>
+                        <div>
+                            <p class="dataInputText">Заполните поля:</p>
+                            <form action="#" id="formSecondTask"> 
+                                <div class="blockFirstFormInput">
+                                    <input id="secondFormFirstInputId" type="text" placeholder="Строка 1" required form="formSecondTask" required>
+                                    <input id="secondFormSecondInputId" type="text" placeholder="Строка 2" required form="formSecondTask" required>
+                                </div>
+                                <div class="blockFirstFormOutput">
+                                    <input id="secondFormThirdInputId" class="button" type="button" form="formSecondTask" value="сравнить">
+                                    <p>Строки равны: 
+                                        <p id="secondFormFirstPId" ></p>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="blockTask">
+                    <div class="blockQuestionTask">
+                        <p class="taskText">Определить наибольщий и наименьший элемент массива</p></div>
+                    <div class="blockFormNumberTask">     
+                        <div class="blockNumberTask" title = "Для определения наибольшего и наименьшего элементов массива необходимо иметь знанния о получении данных через 'document.getElementById', событии 'onclick', выводе информации из JS-документа по средствам innerHTML, стандартных функциях JS таких как 'prompt' и 'alert', сортировке массивов и их методах">
+                            <p class="textNumberTask">3</p>
+                        </div>
+                        <div>
+                            <form class="formThirdTaskCl" action="#" id="formThirdTask">
+                                <input id="thirdFormFirstInputId" class="button taimerInput" type="button" form="formThirdTask" value="ввести массив">
+                                <div class="blockFormThirdOutput">
+                                    <p>Наибольший элемент массива:
+                                        <span id="thirdFormFirstSpanId" ></span>
+                                    </p>
+                                    <p>Наименьший элемент массива: 
+                                        <span id="thirdFormSecondSpanId"></span>
+                                    </p>
+                                </div>  
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="blockTask">
+                    <div class="blockQuestionTask">
+                        <p class="taskText"><br>Таймер</p>
+                    </div>
+                    <div class="blockFormNumberTask">     
+                        <div class="blockNumberTask" title = "Для написания таймера необходимо иметь знанния о получении данных через 'document.getElementById', событии 'onclick', выводе информации из JS-документа по средствам innerHTML, функциях JS таких как 'setTimeout'">
+                            <p class="textNumberTask">4</p>
+                        </div>
+                        <div>
+                            <input class="taimerInput button" type="button" id="time" value="start" onclick="">
+                            <input class="taimerInput button" type="button" id="time1" value="stop" onclick="">
+                            <input class="taimerInput button" type="button" id="time2" value="restart" onclick="">
+                            <div id="clock">00:00:00</div>
+                            <div>Время с начала последнего старта <span id="clock1"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blockTask">
+                    <div class="blockQuestionTask">
+                        <p class="taskText"><br>Тест на знание языка JavaScript</p>
+                    </div>
+                    <div class="blockFormNumberTask">     
+                        <div class="blockNumberTask" title = "Для написания теста необходимо иметь знанния о получении данных через 'document.getElementById', событии 'onclick', выводе информации из JS-документа по средствам innerHTML, методах добавления и удаления классов CSS, константах и функциях JS">
+                            <p class="textNumberTask">5</p>
+                        </div>
+                        <div class="testBlock">
+                            <div class="test" id="test1" onclick="">
+                                <span class="tegPQuestion ">
+                                    <P  class="boldStyleText testTextQuestion1"> 1/10 </P>
+                                    <p  class="boldStyleText testTextQuestion2">Имеет ли JAVASCRIPT отнощение к JAVA</p>
+                                </span>
+                                <!-- <p class="tegPQuestion">
+                                    <span class="boldStyleText testTextQuestion"> 1/10 </span> <br> <span class="boldStyleText"> Имеет ли JAVASCRIPT отнощение к JAVA</span>
+                                </p> -->
+                                <div id="r1" class="testQuestionInpu">
+                                   <span  class="button" onclick="Test.stopDown1()"><p>да, непосредственое ответвление языка JAVA</p></span>
+                                   <span  class="button" onclick="Test.countDown1()"><p>нет, не имеет никакого отношения</p></span>
+                                   <span  class="button" onclick="Test.stopDown1()"><p>JAVA потомок JAVASCRIPT</p></span>
+                                   <span  class="button" onclick="Test.stopDown1()"><p>их придумал один и тот же человек</p></span>
+                                </div>
+                            </div>
+                            <div class="testStart" id="test2" onclick="">
+                                <span class="tegPQuestion ">
+                                    <P  class="boldStyleText testTextQuestion1"> 2/10 </P>
+                                    <p  class="boldStyleText testTextQuestion2">С чем JAVASCRIPT полностью ингрирован</p>
+                                </span>
+                                <div id="r2" class="testQuestionInpu">
+                                    <span  class="button" onclick="Test.countDown1()"> <p>HTML, CSS</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>PYTON</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>JAVA</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>HTML, PHP</p></span>
+                                </div>
+                            </div>
+                            <div class="testStart" id="test3" onclick="">
+                                <span class="tegPQuestion ">
+                                    <P  class="boldStyleText testTextQuestion1"> 3/10 </P>
+                                    <p  class="boldStyleText testTextQuestion2">Самое первое название JAVASCRIPT</p>
+                                </span>
+                                <div id="r3" class="testQuestionInpu">
+                                    <span  class="button" onclick="Test.countDown1()"> <p>Mocha</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>Cmm</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>JavaLive</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>LiveScript</p></span>
+                                </div>
+                            </div>
+                            <div class="testStart" id="test4" onclick="">
+                                <span class="tegPQuestion ">
+                                    <P  class="boldStyleText testTextQuestion1"> 4/10 </P>
+                                    <p  class="boldStyleText testTextQuestion2">Какая команда показывает сообщение и ждёт ответа пользователя без ввода данных</p>
+                                </span>
+                                <div id="r4" class="testQuestionInpu">
+                                    <span  class="button" onclick="Test.countDown1()"> <p>alert</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>getElementById</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>prompt</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>onclick</p></span>
+                                </div>
+                            </div>
+                            <div class="testStart" id="test5" onclick="">
+                                <span class="tegPQuestion ">
+                                    <P  class="boldStyleText testTextQuestion1"> 5/10 </P>
+                                    <p  class="boldStyleText testTextQuestion2">Для создания переменной в JAVASCRIPT используйте ключевое слово</p>
+                                </span>
+                                <div id="r5" class="testQuestionInpu">
+                                    <span  class="button" onclick="Test.countDown1()"> <p>let</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>$</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>from</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>return</p></span>
+                                </div>
+                            </div>
+                            <div class="testStart" id="test6" onclick="">
+                                <span class="tegPQuestion ">
+                                    <P  class="boldStyleText testTextQuestion1"> 6/10 </P>
+                                    <p  class="boldStyleText testTextQuestion2">Языком какого уровня является JAVASCRIPT</p>
+                                </span>
+                                <div id="r6" class="testQuestionInpu">
+                                    <span  class="button" onclick="Test.countDown1()"> <p>Высокого</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>Сверхвысокого</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>низкого</p></span>
+                                </div>
+                            </div>
+                            <div class="testStart" id="test7" onclick="">
+                                <span class="tegPQuestion ">
+                                    <P  class="boldStyleText testTextQuestion1"> 7/10 </P>
+                                    <p  class="boldStyleText testTextQuestion2">Чего не может JAVASCRIPT в браузере</p>
+                                </span>
+                                <div id="r7" class="testQuestionInpu">
+                                    <span  class="button" onclick="Test.countDown1()"> <p>Не может читать/записывать</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>Добавлять новый HTML-код на страницу</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>Изменять существующее содержимое</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>Показывать сообщения</p></span>
+                                </div>
+                            </div>
+                            <div class="testStart" id="test8" onclick="">
+                                <span class="tegPQuestion ">
+                                    <P  class="boldStyleText testTextQuestion1"> 8/10 </P>
+                                    <p  class="boldStyleText testTextQuestion2">Название спецификации JAVASCRIPT</p>
+                                </span>
+                                <div id="r8" class="testQuestionInpu">
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>Openjdk</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>W3C</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>ZCE</p></span>
+                                    <span  class="button" onclick="Test.countDown1()"> <p>ECMAScript</p></span>
+                                </div>
+                            </div>
+                            <div class="testStart" id="test9" onclick="">
+                                <span class="tegPQuestion ">
+                                    <P  class="boldStyleText testTextQuestion1"> 9/10 </P>
+                                    <p  class="boldStyleText testTextQuestion2"> В чем отличие между локальной и глобальной переменной?</p>
+                                </span>
+                                <div id="r9" class="testQuestionInpu">
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>Отличий нет</p></span>
+                                    <span  class="button" onclick="Test.countDown1()"> <p>Глобальные видны повсюду, локальные только в функциях</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>Глобальные не работатют в функциях</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>Локальные видны повсюду, глобальные только в функциях</p></span>
+                                </div>
+                            </div>
+                            <div class="testStart" id="test10" onclick="">
+                                <span class="tegPQuestion ">
+                                    <P  class="boldStyleText testTextQuestion1"> 10/10 </P>
+                                    <p  class="boldStyleText testTextQuestion2"> Как можно вызвать функцию myFunction в javascript?</p>
+                                </span>
+                                <div id="r10" class="testQuestionInpu">
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>call function myFunction(...)</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>funcall myFunction(...)</p></span>
+                                    <span  class="button" onclick="Test.countDown1()"> <p>myFunction(...)</p></span>
+                                    <span  class="button" onclick="Test.stopDown1()"> <p>call myFunction(...)</p></span>
+                                </div>
+                            </div> 
+                            <div class="testStart" id="test11" onclick="">
+                                <div id="r11" class="testQuestionInpu">
+                                    <p class="boldStyleText testTextQuestion">Результаты:</p>
+                                    <p id="ert1231"></p>
+                                    <p >Правильных ответов:<span id="ert2"></span></p>
+                                    <p >Неправильных ответов:<span id="ert3"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>           
+                <div class="blockTask">
+                    <div class="blockQuestionTask">
+                        <p class="taskText"><br>Заставка страницы</p>
+                    </div>
+                    <div class="blockFormNumberTask">     
+                        <div class="blockNumberTask" title = "Для создания заставки необходимо иметь знанния о получении данных через 'document.getElementById', событии 'onclick', цикле for ..of, возмоностях сделать функции самозапускающейся и методах присвояния новых стилевых свойсвт">
+                            <p class="textNumberTask">6</p>
+                        </div>
+                        <div>
+                            <div id="modal_11" class="overlay1" data-close="modal_11">
+                                <div class="overlay12">
+                                    <div ><h2 id="current"></h2></div>
+                                    <div ><h3>Пользователь: <span id="blockUp12"></span></h3></div>    
+                                </div>
+                            </div>
+                            <input id="zaz" type="button" class="button" data-modal="modal_11"  value="заставка">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer>
+        </footer>
+    </div>    
+</body>
+    <script src="js/popupFunctionSplashScreen.js"></script>
+    <script src="js/popupFunctionStartPage.js"></script>
+    <script src="js/popupStartPage_LS.js"></script>
+    <script src="js/task.js"></script>
+    <!-- <script src="js/test.js"></script> -->
+</html>
